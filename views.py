@@ -17,7 +17,7 @@ def primes():
         return render_template('primes.html', primes=primelist)
     else:
         return render_template('primes.html')
-    
+# handling errors: "rescures" to be added!
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
